@@ -6,6 +6,7 @@
     --adress-benefits-color: #757575;
     --hero-footer-bgc:#2F303A;
     --filtres-btn-color:#F5F4FA;
+    --defoult-space-between:30px;
 }
 
 /* ------------------------------------COMMON STYLES------------------------------------ */
@@ -22,6 +23,17 @@
 
 body{
     width: 1600px;
+}
+
+/* PROPERTIES TITLES */
+.properties-titles {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--link-description-color);
 }
 
 /* ------------------------------------COMMON STYLES------------------------------------ */
@@ -51,6 +63,7 @@ body{
     font-size: 26px;
     line-height: calc(31/26);
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .web {
@@ -92,7 +105,8 @@ body{
 }
 
 .adresses{
-
+    display: flex;
+    gap: 50px;
 }
 
 .header-adress {
@@ -124,9 +138,18 @@ body{
 .whole-bottom {
     height: 252px;
     left: 0px;
-    top: 1628px;
     background-color: var(--hero-footer-bgc);
+    padding: 60px;
 }
+
+.adresses{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+
 
 .phisical-adress {
     font-style: normal;
@@ -207,18 +230,19 @@ body{
 /* HERO */
 
 
-
-
-
 /* BENEFITS */
 
 .benefits-list {
+    margin-top: 95px;
     list-style: none;
+    display: flex;
+    gap: var(--defoult-space-between);
 }
 
 .benefits-item {
     font-size: 14px;
     letter-spacing: 0.03em;
+    width: 270px;
 }
 
 .benefits-title {
@@ -242,12 +266,20 @@ body{
 /* RESPONSIBILITIES */
 
 /* .responsibilities {} */
+.responsibilities-title{
+    margin-top: 95px;
+    margin-bottom: 50px;
+}
 
 .responsibilities-list {
     list-style: none;
+    display: flex;
+    gap:var(--defoult-space-between)
 }
 
-/* .responsibilities-item {} */
+.responsibilities-item {
+    height: 294px;
+}
 
 /* .our-team {} */
 
@@ -259,27 +291,30 @@ body{
 /* OUR TEAM */
 
 .our-team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--link-description-color);
+    margin-top: 190px;
+    margin-bottom: 50px;
 }
 
 
 .our-team-list {
     list-style: none;
+    display: flex;
+    gap:var(--defoult-space-between)
 }
 
 .our-team-item {
+    /* txt prop */
     width: 270px;
     font-style: normal;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
+    /* box prop */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 } 
 
 .name { 
