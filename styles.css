@@ -7,6 +7,7 @@
     --hero-footer-bgc:#2F303A;
     --filtres-btn-color:#F5F4FA;
     --defoult-space-between:30px;
+    --items: 4;
 }
 
 /* ------------------------------------COMMON STYLES------------------------------------ */
@@ -25,8 +26,19 @@ body{
     width: 1600px;
 }
 
+/* GRID SETTINGS */
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap:var(--defoult-space-between);
+}
+
+.grid-item{
+    flex-basis: calc(100%-var(--defoult-space-between) * (var(--items) - 1) / (var(--items)));
+}
+
 /* PROPERTIES TITLES */
-.properties-titles {
+.properties-titles {    
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -125,6 +137,13 @@ body{
     color: var(--main-links-color);
 }
 
+.line{
+    display: block;
+    flex-grow: 1;
+    height: 10px;
+    color: gray;
+}
+
 /* HEADER */
 
 
@@ -142,11 +161,15 @@ body{
     padding: 60px;
 }
 
-.adresses{
-    margin-top: 20px;
+/* .adresses{
+   
+} */
+
+.adresses-block{
     display: flex;
     flex-direction: column;
     gap: 9px;
+    margin-top: 20px;
 }
 
 
@@ -260,9 +283,6 @@ body{
 /* BENEFITS */
 
 
-
-
-
 /* RESPONSIBILITIES */
 
 /* .responsibilities {} */
@@ -281,14 +301,14 @@ body{
     height: 294px;
 }
 
-/* .our-team {} */
-
 /* RESPONSIBILITIES */
 
 
 
 
 /* OUR TEAM */
+
+/* .our-team {} */
 
 .our-team-title {
     margin-top: 190px;
@@ -299,7 +319,7 @@ body{
 .our-team-list {
     list-style: none;
     display: flex;
-    gap:var(--defoult-space-between)
+    gap: var(--defoult-space-between);
 }
 
 .our-team-item {
@@ -336,8 +356,14 @@ body{
 /* ------------------------------------PORTFOLIO------------------------------------ */
 
 /* FILTRES */
-.filtres {
+.filtres-list {
     list-style: none;
+    height: 54px;
+    margin-bottom: 35px;
+/* flex prop */
+    display: flex;
+    gap: 8px;
+    justify-content: center;
 }
 
 .filtres-items {
@@ -380,8 +406,12 @@ body{
 
 /* PRODUCTS */
 
-.products-list {
+.products-list { 
     list-style: none;
+    /* flex prop */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .product-name {
