@@ -13,18 +13,18 @@
 /* ------------------------------------COMMON STYLES------------------------------------ */
 .container {
     font-family: Roboto, sans-serif;
-    margin: auto;
-
+    display: block;
+    justify-content: center;
 }
 
-.content-align{
+/* .content-align{
     width: 1200px;
     margin: auto;
-}
+} */
 
-body{
+/* body{
     width: 1600px;
-}
+} */
 
 /* GRID SETTINGS */
 .grid{
@@ -212,7 +212,6 @@ a {
 /* HERO */
 .hero {
     background-color: var(--hero-footer-bgc);
-    width: 1600px;
     margin: auto;
     padding-top: 200px;
     padding-bottom: 280px;
@@ -366,6 +365,7 @@ a {
     height: 54px;
     margin-top: 85px;
     margin-bottom: 35px;
+    margin: auto;
 /* flex prop */
     display: flex;
     gap: 8px;
