@@ -15,7 +15,7 @@
 .container{
     width: 1200px;
     margin: 0 auto;
-    padding: 95px 15px 95px 15px;
+    padding: 0 15px;
 
 }
 
@@ -155,7 +155,7 @@ a {
     height: 252px;
     left: 0px;
     background-color: var(--hero-footer-bgc);
-    padding: 60px;
+    padding: 60px 0 60px 15px;
    
 }
 
@@ -253,7 +253,8 @@ a {
 
 /* BENEFITS */
 
-.benefits {
+.benefits-main {
+    padding-top: 80px;
     line-height: calc(24/14);
     color: var(--adress-benefits-color);
 }
@@ -262,7 +263,6 @@ a {
     list-style: none;
     display: flex;
     gap: var(--defoult-space-between);
-    padding: 0;
 }
 
 .benefits-item {
@@ -286,8 +286,8 @@ a {
 /* RESPONSIBILITIES */
 
 /* .responsibilities {} */
-.responsibilities-title{
-
+.responsibilities{
+    padding-top: 80px;
 }
 
 .responsibilities-list {
@@ -311,7 +311,7 @@ a {
 /* .our-team {} */
 
 .our-team-title {
-
+ padding-top: 80px;
 }
 
 
@@ -319,7 +319,7 @@ a {
     list-style: none;
     display: flex;
     gap: var(--defoult-space-between);
-    padding: 0;
+    padding: 0 0 95px 0;
 }
 
 .our-team-item {
