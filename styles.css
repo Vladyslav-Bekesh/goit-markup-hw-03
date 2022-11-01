@@ -11,6 +11,9 @@
 }
 
 /* ------------------------------------COMMON STYLES------------------------------------ */
+body{
+    font-family: 'Roboto' sans-serif;
+}
 
 .container{
     width: 1200px;
